@@ -92,278 +92,102 @@ bierner.markdown-mermaid
 
 ```json
 {
-  "codesnap.backgroundColor": "#000000",
-  "codesnap.containerPadding": "0px",
-  "codesnap.showWindowControls": false,
-  "codesnap.transparentBackground": true,
-  "cSpell.enabled": true,
-  "cSpell.enableFiletypes": [
-    "mdx"
-  ],
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.detectIndentation": true,
-  "editor.fontFamily": "Anonymous Pro",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 13,
-  "editor.formatOnPaste": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 0,
-  "editor.linkedEditing": true,
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "keyword.operator",
-          "punctuation.separator"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": [
-          "comment",
-          "comment.block"
-        ],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#F5F"
-        }
-      },
-      {
-        "name": "envKeys",
-        "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-        "settings": {
-          "foreground": "#19354900"
-        }
-      }
-    ]
-  },
-  "editor.unicodeHighlight.invisibleCharacters": false,
-  "emmet.showAbbreviationSuggestions": false,
-  "eslint.enable": true,
-  "eslint.validate": [
-    "vue",
-    "react",
-    "typescript",
-    "html",
-    "javascript"
-  ],
-  "explorer.openEditors.visible": 1,
-  "extensions.ignoreRecommendations": true,
-  "files.autoSave": "onWindowChange",
-  "git.autofetch": true,
-  "git.openRepositoryInParentFolders": "never",
-  "markdown.preview.fontSize": 36,
-  "screencastMode.keyboardOptions": {
-    "showCommandGroups": false,
-    "showCommands": false,
-    "showKeybindings": true,
-    "showKeys": false,
-    "showSingleEditorCursorMoves": true
-  },
-  "search.exclude": {
-    "**/*.code-search": true,
-    "**/bower_components": true,
-    "**/node_modules": true
-  },
-  "search.useIgnoreFiles": false,
-  "svelte.enable-ts-plugin": true,
-  "terminal.integrated.fontSize": 14,
-  "vsicons.dontShowNewVersionMessage": true,
-  "window.zoomLevel": 4,
-  "workbench.colorTheme": "Just Black",
-  "workbench.editor.labelFormat": "medium",
-  "workbench.editor.showTabs": "none",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": false,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[handlebars]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // Language-specific editor settings
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[liquid]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
+    "editor.wordWrap": "on"
   },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Editor appearance and behavior
+  "editor.fontFamily": "Anonymous Pro",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 0,
+  "editor.tabSize": 2,
+  "editor.scrollBeyondLastLine": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+
+  // Code formatting and editing
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+  "editor.tabCompletion": "on",
+
+  // Language validation and linting
+  "css.lint.float": "error",
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "sass",
+    "scss"
+  ],
+  "files.associations": {
+    "*.html": "liquid"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Git integration and settings
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // GitLens settings
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+
+  // Explorer and file settings
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Emmet settings for different languages
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "liquid": "html",
+    "twig": "html",
+    "erb": "html",
+    "ruby": "html"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Diff editor settings
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // JavaScript/TypeScript settings
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Ruby-specific settings
+  "ruby.intellisense": "rubyLocate",
+
+  // Workbench appearance and behavior
+  "workbench.colorTheme": "City Lights",
+  "workbench.iconTheme": "city-lights-icons-vsc",
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+
+  // Terminal environment settings
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
   },
+
+  // Security settings
+  "security.workspace.trust.untrustedFiles": "open"
 }
-```
-
-# Keybindings
-
-```json
-[
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.openEditorAtIndex1"
-  },
-  {
-    "key": "ctrl+1",
-    "command": "-workbench.action.openEditorAtIndex1"
-  },
-  {
-    "key": "cmd+2",
-    "command": "workbench.action.openEditorAtIndex2"
-  },
-  {
-    "key": "ctrl+2",
-    "command": "-workbench.action.openEditorAtIndex2"
-  },
-  {
-    "key": "cmd+3",
-    "command": "workbench.action.openEditorAtIndex3"
-  },
-  {
-    "key": "ctrl+3",
-    "command": "-workbench.action.openEditorAtIndex3"
-  },
-  {
-    "key": "cmd+4",
-    "command": "workbench.action.openEditorAtIndex4"
-  },
-  {
-    "key": "ctrl+4",
-    "command": "-workbench.action.openEditorAtIndex4"
-  },
-  {
-    "key": "cmd+5",
-    "command": "workbench.action.openEditorAtIndex5"
-  },
-  {
-    "key": "ctrl+5",
-    "command": "-workbench.action.openEditorAtIndex5"
-  },
-  {
-    "key": "cmd+6",
-    "command": "workbench.action.openEditorAtIndex6"
-  },
-  {
-    "key": "ctrl+6",
-    "command": "-workbench.action.openEditorAtIndex6"
-  },
-  {
-    "key": "cmd+7",
-    "command": "workbench.action.openEditorAtIndex7"
-  },
-  {
-    "key": "ctrl+7",
-    "command": "-workbench.action.openEditorAtIndex7"
-  },
-  {
-    "key": "cmd+8",
-    "command": "workbench.action.openEditorAtIndex8"
-  },
-  {
-    "key": "ctrl+8",
-    "command": "-workbench.action.openEditorAtIndex8"
-  },
-  {
-    "key": "cmd+9",
-    "command": "workbench.action.openEditorAtIndex9"
-  },
-  {
-    "key": "ctrl+9",
-    "command": "-workbench.action.openEditorAtIndex9"
-  },
-  {
-    "key": "ctrl+1",
-    "command": "workbench.action.focusFirstEditorGroup"
-  },
-  {
-    "key": "cmd+1",
-    "command": "-workbench.action.focusFirstEditorGroup"
-  },
-  {
-    "key": "ctrl+3",
-    "command": "workbench.action.focusThirdEditorGroup"
-  },
-  {
-    "key": "cmd+3",
-    "command": "-workbench.action.focusThirdEditorGroup"
-  },
-  {
-    "key": "ctrl+6",
-    "command": "workbench.action.focusSixthEditorGroup"
-  },
-  {
-    "key": "cmd+6",
-    "command": "-workbench.action.focusSixthEditorGroup"
-  },
-  {
-    "key": "ctrl+7",
-    "command": "workbench.action.focusSeventhEditorGroup"
-  },
-  {
-    "key": "cmd+7",
-    "command": "-workbench.action.focusSeventhEditorGroup"
-  },
-  {
-    "key": "ctrl+2",
-    "command": "workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "cmd+2",
-    "command": "-workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "ctrl+4",
-    "command": "workbench.action.focusFourthEditorGroup"
-  },
-  {
-    "key": "cmd+4",
-    "command": "-workbench.action.focusFourthEditorGroup"
-  },
-  {
-    "key": "ctrl+5",
-    "command": "workbench.action.focusFifthEditorGroup"
-  },
-  {
-    "key": "cmd+5",
-    "command": "-workbench.action.focusFifthEditorGroup"
-  },
-  {
-    "key": "ctrl+8",
-    "command": "workbench.action.focusEighthEditorGroup"
-  },
-  {
-    "key": "cmd+8",
-    "command": "-workbench.action.focusEighthEditorGroup"
-  }
-]
 ```
 
 ## Past Themes
