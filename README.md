@@ -98,100 +98,95 @@
 
 ```json
 {
-  // Language-specific editor settings
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[liquid]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[markdown]": {
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "other": "off",
-      "strings": "off"
+    // Language-specific editor settings
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.wordWrap": "on"
-  },
+    "[liquid]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "comments": "off",
+        "other": "off",
+        "strings": "off"
+      },
+      "editor.wordWrap": "on"
+    },
 
-  // Editor appearance and behavior
-  "editor.fontFamily": "Anonymous Pro",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.lineHeight": 0,
-  "editor.tabSize": 2,
-  "editor.scrollBeyondLastLine": false,
-  "editor.renderWhitespace": "boundary",
-  "editor.accessibilitySupport": "off",
-  "editor.bracketPairColorization.enabled": false,
-  "editor.stickyScroll.enabled": true,
-  "editor.linkedEditing": true,
+    // Editor appearance and behavior
+    "editor.fontFamily": "Anonymous Pro",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 0,
+    "editor.tabSize": 2,
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.linkedEditing": true,
 
-  // Code formatting and editing
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
-  "editor.formatOnType": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-  "editor.tabCompletion": "on",
+    // Code formatting and editing
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.tabCompletion": "on",
 
-  // Language validation and linting
-  "css.lint.float": "error",
-  "css.validate": false,
-  "scss.validate": false,
-  "stylelint.validate": [
-    "sass",
-    "scss"
-  ],
-  "files.associations": {
-    "*.html": "liquid"
-  },
+    // Language validation and linting
+    "css.lint.float": "error",
+    "css.validate": false,
+    "scss.validate": false,
+    "stylelint.validate": [
+      "sass",
+      "scss"
+    ],
+    "files.associations": {
+      "*.html": "liquid"
+    },
 
-  // Git integration and settings
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
+    // Git integration and settings
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
 
-  // GitLens settings
-  "gitlens.plusFeatures.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
+    // GitLens settings
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
 
-  // Explorer and file settings
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
+    // Explorer and file settings
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
 
-  // Emmet settings for different languages
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "liquid": "html",
-    "twig": "html",
-    "erb": "html",
-    "ruby": "html"
-  },
+    // Emmet settings for different languages
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "liquid": "html",
+      "twig": "html",
+      "erb": "html",
+      "ruby": "html"
+    },
 
-  // Diff editor settings
-  "diffEditor.ignoreTrimWhitespace": false,
+    // Diff editor settings
+    "diffEditor.ignoreTrimWhitespace": false,
 
-  // JavaScript/TypeScript settings
-  "javascript.updateImportsOnFileMove.enabled": "always",
+    // JavaScript/TypeScript settings
+    "javascript.updateImportsOnFileMove.enabled": "always",
+  
+    // Ruby-specific settings
+    "ruby.intellisense": "rubyLocate",
 
-  // Ruby-specific settings
-  "ruby.intellisense": "rubyLocate",
+    // Workbench appearance and behavior
+    "workbench.colorTheme": "City Lights",
+    "workbench.iconTheme": "city-lights-icons-vsc",
+    "workbench.startupEditor": "none",
+    "workbench.editor.empty.hint": "hidden",
 
-  // Workbench appearance and behavior
-  "workbench.colorTheme": "City Lights",
-  "workbench.iconTheme": "city-lights-icons-vsc",
-  "workbench.startupEditor": "none",
-  "workbench.editor.empty.hint": "hidden",
-
-  // Terminal environment settings
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-
-  // Security settings
-  "security.workspace.trust.untrustedFiles": "open"
-}
+    // Security settings
+    "security.workspace.trust.untrustedFiles": "open"
+  }
 ```
