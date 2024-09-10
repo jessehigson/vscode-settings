@@ -6,8 +6,7 @@
 
 ## Themes/Color
 
-* [Just Black](https://marketplace.visualstudio.com/items?itemName=nur.just-black)
-  * See [`editor.tokenColorCustomizations`](#settings) in my VS Code settings for a few modifications I make to the theme.
+* [City Lights](https://marketplace.visualstudio.com/items?itemName=Yummygum.city-lights-theme)
 
 ## Extensions
 
